@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/gafil/Documents/Latihan/Lang/C++/BST/BinarySearchTree.cpp
+iostream
+-
+BinarySearchTree.h
+C:/Users/gafil/Documents/Latihan/Lang/C++/BST/BinarySearchTree.h
+
+C:/Users/gafil/Documents/Latihan/Lang/C++/BST/BinarySearchTree.h
+string
+-
+
+C:/Users/gafil/Documents/Latihan/Lang/C++/BST/main.cpp
+iostream
+-
+BinarySearchTree.h
+C:/Users/gafil/Documents/Latihan/Lang/C++/BST/BinarySearchTree.h
+

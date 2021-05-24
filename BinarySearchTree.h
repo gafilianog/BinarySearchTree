@@ -2,6 +2,7 @@
 // Created by Gafiliano on 14/05/2021.
 //
 
+#pragma once
 #ifndef JB_BINARYSEARCHTREE_H
 #define JB_BINARYSEARCHTREE_H
 
@@ -23,7 +24,6 @@ public:
     Node *getRoot() const;
     void setRoot(Node *root_);
     Node *insert(Node *root_, const std::string &data_);
-    //Node *update(Node *root_, const std::string &target, const std::string &newData);
     Node *delNode(Node *root_, const std::string &data_);
     static Node *findSuccessor(Node *temp);
     void inOrder(Node *root_);

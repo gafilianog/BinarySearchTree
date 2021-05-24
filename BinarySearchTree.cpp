@@ -27,15 +27,6 @@ BinarySearchTree::Node *BinarySearchTree::insert(BinarySearchTree::Node *root_, 
     return root_;
 }
 
-//BinarySearchTree::Node *
-//BinarySearchTree::update(BinarySearchTree::Node *root_, const std::string &target, const std::string &newData) {
-//    if (!root_) return root_;
-//    if (target > root_->data) root_->right = update(root_->right, target, newData);
-//    else if (target < root_->data) root_->left = update(root_->left, target, newData);
-//    else if (target == root_->data) root_->data = newData;
-//    return root_;
-//}
-
 BinarySearchTree::Node *BinarySearchTree::delNode(BinarySearchTree::Node *root_, const std::string &data_) {
     if (!root_) return root_;
     if (data_ > root_->data) root_->right = delNode(root_->right, data_);
@@ -66,13 +57,13 @@ BinarySearchTree::Node *BinarySearchTree::findSuccessor(BinarySearchTree::Node *
 void BinarySearchTree::inOrder(BinarySearchTree::Node *root_) {
     if (!root_) return;
     inOrder(root_->left);
-    std::cout << root_->data << std::endl;
+    std::cout << " " << root_->data << std::endl;
     inOrder(root_->right);
 }
 
 void BinarySearchTree::postOrder(BinarySearchTree::Node *root_) {
     if (!root_) return;
     postOrder(root_->right);
-    std::cout << root_->data << std::endl;
+    std::cout << " " << root_->data << std::endl;
     postOrder(root_->left);
 }

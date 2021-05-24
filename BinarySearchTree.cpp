@@ -63,7 +63,7 @@ void BinarySearchTree::inOrder(BinarySearchTree::Node *root_) {
 
 void BinarySearchTree::postOrder(BinarySearchTree::Node *root_) {
     if (!root_) return;
+    postOrder(root_->left);
     postOrder(root_->right);
     std::cout << " " << root_->data << std::endl;
-    postOrder(root_->left);
 }

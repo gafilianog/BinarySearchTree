@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "BinarySearchTree.h"
 
 using namespace std;
@@ -12,7 +13,6 @@ int main() {
                 " | 2. Inorder                         |\n"
                 " | 3. Postorder                       |\n"
                 " | 4. Delete Node                     |\n"
-                //" | 5. Update Node                     |\n"
                 " | 5. <FOR CHECKING ROOT DATA>        |\n"
                 " | 0. Exit                            |\n"
                 " +------------------------------------+\n"
@@ -49,16 +49,6 @@ int main() {
                 BST.delNode(BST.getRoot(), data);
                 break;
             }
-
-//            case 5: {
-//                string target, newData;
-//                cout << "Masukkan string yang ingin dicari: ";
-//                cin >> target;
-//                cout << "Masukkan string baru: ";
-//                cin >> newData;
-//                BST.update(BST.getRoot(), target, newData);
-//                break;
-//            }
 
             case 5:
                 cout << BST.getRoot()->data << endl;
